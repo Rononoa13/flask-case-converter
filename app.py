@@ -17,9 +17,9 @@ def home():
         # print(f"{replace_text}")
         # print(f"{note}")
 
-        x = note.replace(find_char, replace_text)
+        user_text = note.replace(find_char, replace_text)
         # print(f'this is changed text -> {x}')
-    return render_template('home.html', x=x)
+    return render_template('home.html', user_text=user_text)
 
 
 if __name__== '__main__':
