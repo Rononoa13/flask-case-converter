@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form action="">
+    <div class="row g-3">
+        <div class="col">
+            <h6>Find this in text:</h6>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="col">
+            <h6>and replace it with</h6>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <br>
+    
+    <textarea name="user-note" class="form-control" id="" cols="30" rows="10" placeholder="Type or paste your text here"></textarea>
+    <br>
+
+    <div class="text-center">
+        <button type="button" class="btn btn-success text-center">Replace</button>
+    </div>
+
+</form>
+{% endblock%}
