@@ -1,25 +1,28 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<form action="", method="POST">
+<form action="" , method="POST">
     <div class="row g-3">
         <div class="col">
             <h6>Find this in text:</h6>
-            <input type="text" class="form-control" name="find-char">
+            <input type="text" class="form-control-sm" name="find-char">
         </div>
 
         <div class="col">
             <h6>and replace it with</h6>
-            <input type="text" class="form-control" name="replace-text">
+            <input type="text" class="form-control-sm" name="replace-text">
         </div>
     </div>
     <br>
 
-    <textarea name="user-note" class="form-control" id="" cols="30" rows="10" placeholder="Type or paste your text here" value="asdfjkasdfhk;"></textarea>
+    <div class="form-outline">
+        <textarea id="user-note" name="user-note" class="form-control" id="text-area" cols="30" rows="10" placeholder="Type or Paste your text here">{{x}}</textarea>
+    </div>
+
     <br>
 
     <div class="text-center">
-        <button type="button" class="btn btn-danger text-center">Clear Text</button>
+        <button id="clear-text" type="button" class="btn btn-danger text-center">Clear Text</button>
         <button type="submit" class="btn btn-success text-center">Replace</button>
     </div>
 
