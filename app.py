@@ -13,12 +13,8 @@ def home():
         replace_text = request.form.get('replace-text')
         note = request.form.get('user-note')
 
-        # print(f"{find_char}")
-        # print(f"{replace_text}")
-        # print(f"{note}")
-
         user_text = note.replace(find_char, replace_text)
-        # print(f'this is changed text -> {x}')
+
     return render_template('home.html', user_text=user_text)
 
 
