@@ -1,4 +1,6 @@
+a {
+    text-decoration: none;
+}
 .row>* {
-
-    margin-left: 175px;
+    margin-left: auto;
 }
