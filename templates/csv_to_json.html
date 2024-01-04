@@ -12,3 +12,22 @@
         </form>
     </div>
 {% endblock %}
+
+{% block json_content %}
+    <div class="json-preview-container">
+        {% if display_message %}
+        <h3 align="center">Your JSON preview:</h3>
+        {% endif %}
+        <pre align="center">{{ json_preview }}</pre>
+    </div>
+
+    {% if display_message %}
+        <div align="center" class="json-download-container">
+            <form action="/download-json" method="post" enctype="multipart/form-data">
+                <button type="submit" value="">Download JSON</button>
+            </form>
+        </div>
+    {% endif %}
+    
+{% endblock %}
+

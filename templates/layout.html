@@ -16,16 +16,22 @@
     <nav class="navbar bg-dark">
         <div class="nav-container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <a href="{{url_for('home')}}">
                         <span class="navbar-brand mb-0 h1 text-white" >Case Converter</span>
                     </a>
                     
                 </div>
                 
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <a href="{{url_for('get_pretty_json')}}">
                         <span class="navbar-brand mb-0 h1 text-white" >JSON Converter</span>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="{{url_for('upload_file')}}">
+                        <span class="navbar-brand mb-0 h1 text-white" >csv to JSON</span>
                     </a>
                 </div>
             </div>
@@ -39,6 +45,9 @@
 
     {% block content %}
     {% endblock%}
+
+    {% block json_content %}
+    {% endblock %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
