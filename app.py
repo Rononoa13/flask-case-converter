@@ -18,5 +18,9 @@ def home():
     return render_template('home.html', user_text=user_text)
 
 
+@app.route("/csv_json_converter", methods=['GET', 'POST'])
+def convert_csv_to_json():
+    return render_template('csv_to_json.html')
+
 if __name__== '__main__':
     app.run(debug=True)
