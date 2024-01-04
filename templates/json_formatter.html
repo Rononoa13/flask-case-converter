@@ -1,12 +1,16 @@
 {% extends 'layout.html' %}
 
+{% block heading %}
+        <h1 align="center">Format your JSON here</h1>
+{% endblock %}
+
 {% block content %}
     <div class="json-form-container">
         <div class="row">
             <div class="col">
                 <form action="/json_converter" method="POST">
                     <div class="form-outline">
-                        <textarea id="json-input" name="json-input" class="form-control" cols="30" rows="10" placeholder="Type or Paste your JSON here"></textarea>
+                        <textarea id="json-input" name="json-input" class="form-control" cols="30" rows="10" placeholder="Paste your valid JSON here"></textarea>
                     </div>
                     <br>
                     <div align="center" class="submit-button-container">
@@ -24,7 +28,7 @@
         </div>
     </div>
     <br>
-    <div class="text-center">
-        <button id="clear-text" type="button" class="btn btn-danger text-center">Clear Text</button>
-    </div>
+{% endblock %}
+
+{% block json_content %}
 {% endblock %}

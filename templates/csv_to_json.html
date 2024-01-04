@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+        <h1 align="center">Convert your csv to JSON</h1>
+{% endblock %}
+
+{% block content %}
+    <div align="center" class="csv-upload-container">
+        <form action="" method=post enctype=multipart/form-data>
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+{% endblock %}
+
+{% block json_content %}
+    <div class="json-preview-container">
+        {% if display_message %}
+        <h3 align="center">Your JSON preview:</h3>
+        {% endif %}
+        <pre align="center">{{ json_preview }}</pre>
+    </div>
+
+    {% if display_message %}
+        <div align="center" class="json-download-container">
+            <form action="/download-json" method="post" enctype="multipart/form-data">
+                <button type="submit" value="">Download JSON</button>
+            </form>
+        </div>
+    {% endif %}
+    
+{% endblock %}
+

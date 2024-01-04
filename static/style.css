@@ -4,3 +4,8 @@ a {
 .row>* {
     margin-left: auto;
 }
+
+nav {
+    margin: auto;
+    height: 50px
+}
