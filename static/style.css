@@ -1,4 +1,12 @@
+a {
+    text-decoration: none;
+}
 .row>* {
 
     margin-left: 175px;
+}
+
+nav {
+    margin: auto;
+    height: 50px
 }
