@@ -14,8 +14,21 @@
 <body>
     <!-- As a heading -->
     <nav class="navbar bg-dark">
-        <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1 text-white" >Case Converter</span>
+        <div class="nav-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="{{url_for('home')}}">
+                        <span class="navbar-brand mb-0 h1 text-white" >Case Converter</span>
+                    </a>
+                    
+                </div>
+                
+                <div class="col-md-6">
+                    <a href="{{url_for('get_pretty_json')}}">
+                        <span class="navbar-brand mb-0 h1 text-white" >JSON Converter</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
     <br>
